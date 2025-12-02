@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - REPORTAGEM SARAH</title>
+    <!-- Sarah Cristina Aguiar Silva, Raiany dos Santos Passos e Luiz Paulo Rezende Bergamini, Turma: 148-->
+    
+    <style>
+        nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2, h4 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+       
+        .borda-conto b {
+            display: block;
+            text-align: center;
+            margin: 32px 0 8px 0;
+            font-size: 1.15em;
+        }
+
+        .img-reportagem {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+        
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+            .img-reportagem {
+                
+                max-width: 98vw;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+        nav {
+    margin-top: 16px;
+    text-align: center;
+}
+.nav-btn {
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 0 8px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.nav-btn:hover {
+    background: #b79fd8;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    
+<h1>REPORTAGEM</h1>
+<nav>
+    <a href="slam.html" class="nav-btn">Slam</a>
+    <a href="conto.html" class="nav-btn">Conto</a>
+    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h2>A Beleza Da Dança Em Diferentes Países</h2>
+        <h4>Como a dança é capaz de expressar e compartilhar sua
+cultura, riqueza e sentimentos de todo uma nação através de
+uma forma de arte dita como “simples”?</h4>
+        <p>
+A dança é uma forma de arte milenar, e desde os primórdios
+da humanidade é exercida como forma de expressão tanto
+social quanto pessoal, sendo muito importante para a cultura
+de grandes e pequenos grupos. Ela é utilizada para expressar
+sentimentos e provocá-los em seu espectador. A dança não é
+apenas algo para ser observada, mas também sentida e
+compreendida, já que ela representa a cultura e modo de vida
+de um povo.
+        </p>
+
+
+<img src="reportagemImagem.jpg" alt="O Prazer da Dança (1890) de Luigi Cavalieri" class="img-reportagem">
+<br>
+<p>
+A dança sempre esteve presente na sociedade, ou melhor
+dizendo, desde o surgimento da espécie primata. Ela surgiu
+primeiramente como um meio de comunicação entre os
+integrantes do bando, evoluindo para rituais religiosos e hoje
+em dia, vista como um meio de arte muito importante. Mas
+por quê?
+</p>
+
+<img src="Captura de tela 2025-11-26 205120.png" alt="Mulher e homem dançando tango" class="img-reportagem">
+<p>
+    O tango surgiu no final do
+século XIX nas margens do
+Rio da Prata, em Buenos
+Aires, na Argentina, nas
+áreas empobrecidas da
+região. A dança surgiu em
+meio à um contexto de
+repressão e marginalização
+de práticas culturais
+trazidas pelos imigrantes, era frequentemente associada aos
+ambientes de prostituição e pobreza.
+Hoje em dia, o tango é visto como um patrimônio cultural do
+país, representando sua história e lutas, transmitindo
+sensualidade, paixão e tristeza.
+</p>
+<img src="Captura de tela 2025-11-26 205812.png" alt="Mulher e homem dançando tango" class="img-reportagem">
+<br><br>
+Fonte: <a href="fonte: https://www.todamateria.com.br/tango/">https://www.todamateria.com.br/tango/</a> 
+<p>
+    Diferente do tango,
+a dança indiana
+Kathak tem origens
+em tradições
+sagradas ligadas a
+rituais dentro do
+contexto hindu.
+O termo Kathak
+deriva da palavra
+sânscrita védica
+“Kathak”, que significa “história”, e “Kathakar”, que significa
+“aquele que conta uma história”. Os Kathakars errantes, ou
+bardos viajantes, contavam histórias, inspiradas em nossos
+antigos épicos e mitologia, por meio de danças, canções e
+músicas.
+</p>
+<img src="Captura de tela 2025-11-26 210052.png" alt="dançarina Kathak" class="img-reportagem">
+<p>
+Ao longo do tempo, o Kathak passou a ser apresentado em
+cortes reais e a absorver influências da cultura persa e da Ásia
+Central, mas manteve suas raízes sagradas. Os artistas de
+Kathak exibem histórias por meio de movimentos graciosos
+das mãos, amplo trabalho de pés, movimentos corporais
+flexíveis e, mais importante, expressões faciais intensas,
+capazes de evocar uma variedade de emoções. Sendo um
+ótimo exemplo de dança sagrada não europeia que não recebe
+tanto reconhecimento.<br><br>
+Fonte: <a href="https://www.ipassio.com/wiki/dance/indian-classical-dance/kathak">https://www.ipassio.com/wiki/dance/indian-classical-dance/kathak</a>
+</p>
+
+<br>
+
+<img src="Captura de tela 2025-11-26 210633.png" alt="Bailarinas" class="img-reportagem">
+
+<p>
+A Dança Clássica, ou o Ballet, é uma forma de arte que
+combina movimento, música e expressão corporal para contar
+histórias, além disso, transmitir emoções e celebrar a beleza da
+dança. Ele originou-se nas cortes da Itália renascentista
+durante o século XV, desenvolvendo-se e recebendo muito
+destaque na Inglaterra, Rússia e França, e desde então acabou
+tornando-se famosa, admirada e praticada em todo o mundo.
+O ballet é uma importante forma de expressão artística e uma
+das primeiras formas de dança estruturadas da história da
+humanidade.
+<br><br>
+Fonte: <a href="https://anabotafogomaison.com.br/a-historia-do-ballet/">https://anabotafogomaison.com.br/a-historia-do-ballet/</a>
+</p>
+
+<img src="Captura de tela 2025-11-26 210932.png" alt="Bailarinas" class="img-reportagem">
+
+<br>
+<p class="lead">
+O ballet surgiu como espetáculos
+solenes durante o período
+renascentista. Esses eram
+espetáculos apresentados em festas
+aristocráticas, onde músicos e
+bailarinos da corte colaboravam para
+criar entretenimento para a nobreza.
+A coreografia era adaptada nos
+passos das danças nobres, os
+dançarinos vestiam-se da roupa da
+moda e, ao fim, era comum o
+“público” entrar na dança.
+O início histórico do ballet é,
+geralmente, datado de 1581. No dia
+15 de Outubro daquele ano, na sala
+Le Petit-Bourbon, em Paris, foi
+apresentado “Le ballet Comique de <br>
+la Reine” (O Balé Cômico da Rainha), sendo que na
+linguagem teatral da época, cômico queria dizer “dramático”.
+Com coreografia de Balthazar de Beaujoyeulx, música
+instrumental de Lambert de Beaulieu e François Cajetan,
+música vocal de Jacques Salmon, décors (cenário e figurinos)
+de Jacques Patin e texto de La Chesnaye; o ballet durava mais
+de 5 horas e fazia parte das comemorações do casamento de
+Marguerite de Vaudemont com o Duque Anne (nome
+alternativo) Joyeuse.
+Ela era irmã da então rainha da França, Louise de Lorraine.
+Além de danças, músicas e dramaturgia, esse espetáculo tinha
+falas.
+Esse é considerado o primeiro espetáculo de ballet da história,
+o espetáculo que deu início ao Ballet de Corte.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Sarah Cristina Aguiar Silva, Raiany dos Santos Passos e Luiz Paulo Rezende Bergamini (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>

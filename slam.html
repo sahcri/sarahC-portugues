@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - SLAM SARAH</title>
+     <!-- Sarah Cristina Aguiar Silva, Turma: 148-->
+
+    <style>
+
+        nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .audio-center {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #a88ac7;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            margin: 0;
+            border-top: none;
+        }
+
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+                display: block;
+            }
+            body.leitura .borda-conto {
+                font-size: 1.45em;
+                line-height: 2.3;
+                padding: 24px 6px;
+                background: #fffbe6;
+                color: #222;
+            }
+            .audio-center {
+                margin: 16px 0;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+        nav {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .nav-btn {
+            display: inline-block;
+            background: #b79fd8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            margin: 0 8px;
+            font-size: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-btn:hover {
+            background: #a88ac7;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<h1>SLAM ( sobre a Declaração Universal dos Direitos Humanos)</h1>
+<nav>
+    <a href="slam.html" class="nav-btn">Slam</a>
+    <a href="conto.html" class="nav-btn">Conto</a>
+    <a href="reportagem.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h2>A ironia da vida - Art. 4</h2>
+        <div class="audio-center">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                
+            </audio>
+        </div>
+        <p>
+“Engraçado, eu acho muito engraçado <br>
+  Preto reclama da escravidão do Brasil <br>
+  Mas não fala que branco também foi escravizado”<br>
+
+<br>
+“Não, não importa que é o preto que trabalha até a morte sendo explorado<br>
+  Enquanto o branco se aproveita do trabalho do proletariado.<br>
+  Meritocracia existe, é só ver pra crer.” <br>
+<br>
+“Não, não importa que o gari que tá na rua se esforçando pra não morrer,<br>
+Sendo discriminado e pedindo esmola pra ter alguma coisa pra comer<br>
+Não importa que a pele dele é negra, mesmo vendo todo dia um negro nesse estado.” <br>
+
+<br>
+  Falando no estado, sabe o que acontece mas se finge de cego pro necessitado  <br>
+Direitos humanos só funciona se tu é branco, homem ou rico.<br>
+A verdade é que a ajuda só vem quando é pra te colocar no necrotério ou no hospício.<br>
+<br>
+Sabe o que eu acho engraçado? <br>
+Pessoa sem o mínimo de noção falando tudo que pode pra desmerecer a nossa glória,<br>
+   Engraçado mesmo eu vou achar quando verem que dia após dia, a gente vai alcançar a vitória
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>Sarah Cristina Aguiar Silva (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>
